@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="timer">
+      <svg width="400" height="400">
+        <circle
+          r="190"
+          cx="200"
+          cy="200"
+          fill="transparent"
+          stroke-width="15"
+          transform="rotate(-90 200 200)"
+        />
+      </svg>
+      <form action="#">
+        <input type="text" id="duration" value="60" />
+        <div class="btn">
+          <button id="start" title="Play Button">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="pause" title="Pause Button">
+            <i class="fas fa-pause"></i>
+          </button>
+          <button id="reset" title="Reset Button">
+            <i class="fas fa-power-off"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="timer.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
